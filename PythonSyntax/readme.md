@@ -44,19 +44,19 @@ x = 5
 y = "Hello"
 z = True
 ```
-#####多个变量赋值
+##### 多个变量赋值
 按照顺序将右侧表达式的值赋给左侧变量。
 
 ```python
 x, y, z = 5, "Hello", True
 ```
-#####交换赋值
+##### 交换赋值
 将两个变量的值互换。
 
 ```python
 x, y = y, x
 ```
-#####增量赋值
+##### 增量赋值
 
 ```python
 x = 5
@@ -64,7 +64,7 @@ x += 3  # 等同于 x = x + 3
 y = 10
 y *= 5  # 等同于 y = y * 5
 ```
-#####多重赋值
+##### 多重赋值
 同时将多个值赋给多个变量。
 
 ```python
@@ -76,9 +76,11 @@ a = b = c = 10
 x, y, z = (1, 2, 3)
 ```
 
- ###常用函数
-####类型转换
-#####int():将其他类型转换为整数类型
+###  常用函数
+
+#### 类型转换
+
+#####  int():将其他类型转换为整数类型
 
 ```python
 num_float = 3.14
@@ -91,7 +93,7 @@ num_str = "123"
 num_int = int(num_str)
 print(num_int)  # 输出: 123   
 ```
-#####float():将其他类型转换为浮点数类型
+##### float():将其他类型转换为浮点数类型
 
 ```python
 num_int = 123
@@ -105,7 +107,7 @@ num_float = float(num_str)
 print(num_float)  # 输出: 3.14
 ```
 
-#####str():将其他类型转换为字符串类型
+##### str():将其他类型转换为字符串类型
 
 ```python
 num_int = 123
@@ -119,7 +121,7 @@ num_str = str(num_float)
 print(num_str)  # 输出: "3.14"
 ```
 
-#####bool():将其他类型转换为布尔类型
+##### bool():将其他类型转换为布尔类型
 
 ```python
 num_int = 0
@@ -133,7 +135,7 @@ num_bool = bool(num_int)
 print(num_bool)  # 输出: True
 ```
 
-#####list(),tuple(),set():将其他可迭代对象转换为列表、元组、集合
+##### list(),tuple(),set():将其他可迭代对象转换为列表、元组、集合
 
 ```python
 str_list = list("Hello")
@@ -150,7 +152,7 @@ print(num_tuple)  # 输出: (1, 2, 3)
 num_list = [1, 2, 3]
 num_set = set(num_list)
 print(num_set)  # 输出: {1, 2, 3}
-``` 
+```
 
 
 ```python
@@ -165,7 +167,7 @@ num_list = list(num_set)
 print(num_list)  # 输出: [1, 2, 3]
 ```
 
-#####dict():将其他类型转换为字典
+##### dict():将其他类型转换为字典
 
 ```python
 num_dict = dict(a=1, b=2, c=3)
@@ -182,53 +184,53 @@ num_dict = dict({'a': 1, 'b': 2, 'c': 3})
 print(num_dict)  # 输出: {'a': 1, 'b': 2, 'c': 3}
 ```
 
-####数学函数
+#### 数学函数
 
-#####abs():求绝对值
+##### abs():求绝对值
 
 ```python
 num_abs = abs(-5)
 print(num_abs)  # 输出: 5
 ```
 
-#####round():四舍五入
+##### round():四舍五入
 
 ```python
 num_round = round(3.14159, 2)
 print(num_round)  # 输出: 3.14
 ```
 
-#####pow():幂运算
+##### pow():幂运算
 
 ```python
 num_pow = pow(2, 3)
 print(num_pow)  # 输出: 8
 ```
 
-#####max():求最大值
+##### max():求最大值
 
 ```python
 num_max = max(1, 2, 3, 4, 5)
 print(num_max)  # 输出: 5
 ```
 
-#####min():求最小值
+##### min():求最小值
 
 ```python
 num_min = min(1, 2, 3, 4, 5)
 print(num_min)  # 输出: 1
 ```
 
-#####sum():求和
+##### sum():求和
 
 ```python
 num_sum = sum([1, 2, 3, 4, 5])
 print(num_sum)  # 输出: 15
 ```
 
-####序列操作函数
+#### 序列操作函数
 
-#####len():求长度
+##### len():求长度
 len()可以返回序列长度（求元素个数），也可以返回字符串长度
 
 ```python
@@ -236,23 +238,23 @@ num_len = len([1, 2, 3, 4, 5])
 print(num_len)  # 输出: 5
 ```
 
-#####sorted():排序
+##### sorted():排序
 
 ```python
 num_sorted = sorted([3, 1, 2, 5, 4])
 print(num_sorted)  # 输出: [1, 2, 3, 4, 5]
 ```
 
-#####reversed():反转
+##### reversed():反转
 
 ```python
 num_reversed = reversed([1, 2, 3, 4, 5])    
 print(list(num_reversed))  # 输出: [5, 4, 3, 2, 1]
 ```
 
-####字符串处理函数
+#### 字符串处理函数
 
-#####capitalize():首字母大写
+##### capitalize():首字母大写
 
 ```python
 str_capitalize = "hello world".capitalize()
@@ -266,7 +268,7 @@ str_title = "hello world".title()
 print(str_title)  # 输出: Hello World
 ```
 
-#####upper():全部大写
+##### upper():全部大写
 
 ```python
 str_upper = "hello world".upper()
@@ -280,58 +282,58 @@ str_lower = "Hello World".lower()
 print(str_lower)  # 输出: hello world
 ```
 
-#####split():将字符串按指定字符分割
+##### split():将字符串按指定字符分割
 
 ```python
 str_split = "hello,world".split(",")
 print(str_split)  # 输出: ['hello', 'world']
 ```
 
-#####count():统计某个字符或字符串出现的次数
+##### count():统计某个字符或字符串出现的次数
 
 ```python
 str_count = "hello world".count("o")
 print(str_count)  # 输出: 2
 ```
 
-#####swapcase():大小写互换
+##### swapcase():大小写互换
 
 ```python
 str_swapcase = "Hello World".swapcase()
 print(str_swapcase)  # 输出: hELLO wORLD
 ```
 
-#####replace():替换字符串
+##### replace():替换字符串
 
 ```python
 str_replace = "hello world".replace("world", "python")
 print(str_replace)  # 输出: hello python
 ```
 
-#####center():居中显示
+##### center():居中显示
 
 ```python
 str_center = "hello".center(10)
 print(str_center)  # 输出:   hello
 ```
 
-####其他
+#### 其他
 
-#####type():获取变量的类型
+##### type():获取变量的类型
 
 ```python
 num_type = type(123)
 print(num_type)  # 输出: <class 'int'>
 ```
 
-#####range():生成一个整数序列
+##### range():生成一个整数序列
 
 ```python
 range_num = range(1, 10)
 print(list(range_num))  # 输出: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
-#####eval():将字符串转换为Python表达式或数值
+##### eval():将字符串转换为Python表达式或数值
 
 ```python
 eval_num = eval("1+2")
